@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>header-footer design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="content">
+        <div class="content_inner copy">
+            <h1>scroll down</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione delectus provident voluptatibus culpa reiciendis temporibus dolores, quaerat voluptate veniam odit, quibusdam rem itaque aliquid nemo eaque dicta, modi illo quidem tenetur placeat? Ratione similique dolore laudantium, quod est aliquid reprehenderit eius cum ipsa delectus, quos ea blanditiis non adipisci aspernatur fuga! Modi laudantium hic aliquam perspiciatis fuga dolor velit omnis architecto laboriosam sunt, incidunt enim labore ea quo distinctio eaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam provident, porro, incidunt maxime ex distinctio quos nam aperiam eaque nulla, non quia. Rerum ad, deserunt doloribus repellendus, asperiores delectus animi obcaecati in assumenda id officiis, libero harum a. Necessitatibus error deleniti earum harum reiciendis est magnam quia cum voluptatibus molestiae? Praesentium in sit provident debitis assumenda earum consectetur cumque ullam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusamus accusantium cum quis aperiam voluptates ipsum placeat, neque dolorem veritatis?</p>
+            <h1>scroll some more,please!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus odit enim quam provident minus temporibus eaque facere autem quibusdam, doloribus soluta odio dicta rerum commodi fuga illo vero! Distinctio excepturi aliquid eveniet sit nesciunt consequuntur exercitationem totam quidem dolorum blanditiis. Aperiam reprehenderit laudantium, voluptatem nulla cupiditate asperiores odio ducimus distinctio!</p>
+
+        </div>
+    </main>
+    <footer class="fixed-footer">
+        <div class="content">
+            <div class="content_inner">
+                <div class="nav">
+                    <div class="col">
+                        <li>Menu</li>
+                        <li>Home</li>
+                        <li>Projects</li>
+                        <li>Subsystem</li>
+                    </div>
+                    <div class="col">
+                        <li>Contact</li>
+                        <li>Home</li>
+                        <li>Research</li>
+                        <li>Subsystem</li>
+                    </div>
+                    <div class="col">
+                        <li>Tests</li>
+                        <li>Launches</li>
+                        <li>Projects</li>
+                        <li>Updates</li>
+                    </div>
+                    <div class="col">
+                        <li>Acheivements</li>
+                        <li>Sponsors</li>
+                        <li>Glory</li>
+                        <li>Subsystem</li>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span>2024|all rights reserved</span>
+                    <span>site by <u>Adithya</u></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        gsap.from(".fixed-footer",{
+            y: -200, 
+        scrollTrigger: {
+            trigger: ".content",
+            start: "bottom bottom",
+            scrub: true,
+        }
+        })
+    </script>
+</body>
